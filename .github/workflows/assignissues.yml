@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Assign Issue
 
-        uses: actions-ecosystem/action-assign@v2
+        uses: KentuckyDev/assign-issue@v1
 
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
