@@ -1,0 +1,19 @@
+name: Automatically Assign Issues
+
+on:
+  issues:
+    types:
+      -opened
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Assign Issue
+
+        uses: actions-ecosystem/action-assign@v2
+
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: caidensanders-wsu
