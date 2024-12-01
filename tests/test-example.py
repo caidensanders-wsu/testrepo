@@ -12,3 +12,6 @@ def test_add_3():
 
 def test_add_4():
   assert add(-1, 8) == 7
+
+def test_add_5():
+  assert add(200, 200) == 400
