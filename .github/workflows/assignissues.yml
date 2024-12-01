@@ -3,7 +3,7 @@ name: Automatically Assign Issues
 on:
   issues:
     types:
-      -opened
+      - opened
 
 jobs:
   main:
@@ -16,4 +16,4 @@ jobs:
 
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: caidensanders-wsu
+          assignees: "caidensanders-wsu"
