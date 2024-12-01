@@ -8,12 +8,15 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
   
     steps:
       - name: Assign Issue
 
-        uses: KentuckyDev/assign-issue@v1
+        uses: pozil/auto-assign-issue@v2
 
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: "caidensanders-wsu"
+          numOfAssignee: 1
